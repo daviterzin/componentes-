@@ -1,0 +1,24 @@
+import {link} from 'react-router-dom';
+import {cards} from 'react-router-classeName = (personagem)';
+
+export function link () {
+     cards : String; 
+     cardsNameURL : String;
+
+}
+
+export function card ({nomedopersonagem,personagemURL}) {
+   const personagemPosition = personagemURL?.replace(/\D/g,'').Slice(2);
+   return (
+    <Link to= {'/personagem/$personagemposition}'} classeName="flex flex-col justify-between w-[170px] h-44 gap-2 bg white rounded-md shadow-2x1 drop-shadow-md cursor-pointer hover:scale-105 duration-150 transition">
+        <span className="text-end p-2">#{personagemPosition}</span>
+
+        <section className="flex flex-col justify-between pb-2 items-center bg-slate-200 w-full h-[45%] rounded-md">
+        <img
+          src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonPosition}.png`}
+          alt={`Imagem do pokemon: ${personagemName}`}
+          className="w-28 h-28 -mt-16"/>
+          <span className="capitalize">{personagemName}</span>
+       </section>
+    </Link>
+    ) 
